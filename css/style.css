@@ -296,7 +296,6 @@ select::-ms-expand {
 .header__link--contact {
   padding: 7px 15px;
   border-radius: 15px;
-  margin-left: 40px;
   color: #8F712A;
   background-color: #F3EBC2;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1553,7 +1552,7 @@ select::-ms-expand {
   background-color: #87997A;
   margin-bottom: 20px; /* 必要な隙間の値を設定 */
   border-radius: 10px;
-  margin: 0 20px 30px;
+  margin: 0 20px 0;
 }
 @media screen and (max-width: 768px) {
   .blog__accordion-title {
@@ -1643,7 +1642,7 @@ select::-ms-expand {
 
 .accordion__content {
   display: none;
-  padding: 21px 20px;
+  padding: 20px 60px;
 }
 @media screen and (max-width: 768px) {
   .accordion__content {
