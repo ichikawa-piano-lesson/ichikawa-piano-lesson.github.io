@@ -913,6 +913,11 @@ select::-ms-expand {
   left: 0;
   bottom: 0;
 }
+@media screen and (max-width: 1024px) {
+  .news__tree-left-img {
+    max-width: 300px;
+  }
+}
 @media screen and (max-width: 768px) {
   .news__tree-left-img {
     max-width: 45%;
@@ -925,6 +930,11 @@ select::-ms-expand {
   position: absolute;
   top: 130px;
   right: 0;
+}
+@media screen and (max-width: 1024px) {
+  .news__tree-right-img {
+    max-width: 300px;
+  }
 }
 @media screen and (max-width: 768px) {
   .news__tree-right-img {
