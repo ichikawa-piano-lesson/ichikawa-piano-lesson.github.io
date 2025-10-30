@@ -1900,7 +1900,7 @@ select::-ms-expand {
   left: -40px;
   bottom: 0px;
   z-index: 20000;
-  width: 200px;
+  width: 280px;
   aspect-ratio: 1/1;
   display: block;
   cursor: pointer;
@@ -1916,6 +1916,11 @@ select::-ms-expand {
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
   mask-position: center;
+}
+@media screen and (max-width: 375px) {
+  .for-top-btn {
+    width: 200px;
+  }
 }
 
 .for-top-btn.hidden {
