@@ -29,13 +29,15 @@ document.addEventListener("DOMContentLoaded", () => {
 // アコーディオン
 const accordions = document.querySelectorAll(".js-accordion");
 accordions.forEach((acc) => {
-  // そのアコーディオン内の1つ目を初期オープン
-  const firstTitle = acc.querySelector(".js-accordion__title");
-  const firstContent = firstTitle && firstTitle.nextElementSibling;
-  if (firstTitle && firstContent) {
-    firstTitle.classList.add("is-open");
-    firstContent.style.display = "block";
-    firstContent.style.maxHeight = firstContent.scrollHeight + "px";
+  // そのアコーディオン内の1つ目を初期オープン（js-accordion--initially-closedの場合はスキップ）
+  if (!acc.classList.contains("js-accordion--initially-closed")) {
+    const firstTitle = acc.querySelector(".js-accordion__title");
+    const firstContent = firstTitle && firstTitle.nextElementSibling;
+    if (firstTitle && firstContent) {
+      firstTitle.classList.add("is-open");
+      firstContent.style.display = "block";
+      firstContent.style.maxHeight = firstContent.scrollHeight + "px";
+    }
   }
 
   // そのアコーディオン内のタイトルにだけクリック設定
