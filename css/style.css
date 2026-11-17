@@ -1118,16 +1118,27 @@ select::-ms-expand {
 .introduction__top--detail tr {
   padding-top: 30px;
 }
+.introduction__inner--bottom .introduction__top--detail tr + tr > th,
+.introduction__inner--bottom .introduction__top--detail tr + tr > td {
+  padding-top: calc(1.5em * 5);
+}
 @media screen and (max-width: 768px) {
   .introduction__top--detail tr {
     display: flex;
     flex-direction: column;
     padding-top: 12px;
   }
+  .introduction__inner--bottom .introduction__top--detail tr + tr {
+    padding-top: calc(1.5em * 5);
+  }
+  .introduction__inner--bottom .introduction__top--detail tr + tr > th,
+  .introduction__inner--bottom .introduction__top--detail tr + tr > td {
+    padding-top: 0;
+  }
 }
 
 .introduction__top--detail tr th {
-  width: 8rem;
+  width: 9rem;
   margin-top: 10px;
 }
 @media screen and (max-width: 768px) {
@@ -1161,6 +1172,10 @@ select::-ms-expand {
 
 .accordion {
   width: 100%;
+}
+
+.introduction__accordion--recruit .introduction__accordion-title {
+  background-color: #F3EBC2;
 }
 
 .introduction__accordion-title {
@@ -1197,6 +1212,10 @@ select::-ms-expand {
   line-height: 1.867;
   padding-left: 2em;
   text-indent: -1rem;
+}
+.introduction__accordion-text a {
+  color: #8F712A;
+  text-decoration: underline;
 }
 @media screen and (max-width: 768px) {
   .introduction__accordion-text {
@@ -1401,6 +1420,11 @@ select::-ms-expand {
   .rules__list {
     padding-left: 0;
   }
+}
+
+.rules__list a {
+  color: #8F712A;
+  text-decoration: underline;
 }
 
 .rules__item {
