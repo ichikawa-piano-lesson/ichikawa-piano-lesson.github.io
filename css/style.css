@@ -715,7 +715,7 @@ select::-ms-expand {
 
 .fv__img--piano-img {
   position: absolute;
-  bottom: -28px;
+  bottom: 16px;
   left: 77px;
   margin: 0 auto;
 }
@@ -731,6 +731,39 @@ select::-ms-expand {
     position: relative;
     bottom: 0;
     transform: none;
+  }
+}
+
+.fv__place {
+  margin: 14px 0 0;
+  text-align: center;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  color: #8F712A;
+  line-height: 1.7;
+}
+.fv__place::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 1px;
+  margin: 0 auto 8px;
+  background-color: #8F712A;
+  opacity: 0.45;
+}
+@media screen and (max-width: 1024px) {
+  .fv__place {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fv__place {
+    margin-top: 18px;
+    font-size: 14px;
+    letter-spacing: 0.16em;
   }
 }
 
